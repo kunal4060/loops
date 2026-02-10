@@ -5,9 +5,11 @@ public class cubes {
         System.out.print("Enter n: ");
         int n = sc.nextInt();
         System.out.println("Cubes:");
-        for(int i = 1; i <= n; i++){
-            System.out.println(i + "³ = " + (i*i*i));
-        }
-        sc.close();
+        int cube = (int) Math.pow(n,3);
+        System.out.println(n + " = " + cube);
+    //     for(int i = 1; i <= n; i++){
+    //         System.out.println(i + " = " + (i*i*i));
+    //     }
+    //     sc.close();
     }
 }
