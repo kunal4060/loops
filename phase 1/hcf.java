@@ -6,9 +6,15 @@ public class hcf {
         int a = sc.nextInt();
         System.out.print("Enter second number: ");
         int b = sc.nextInt();
-        int smaller = (a < b) ? a : b;
+        if(a > b) {
+        //     int smaller = b;
+
+            
+        // } else {
+        //     int smaller = a;
+        // } 
         int hcf = 1;
-        for(int i = 1; i <= smaller; i++){
+        for(int i = 1; i <= Math.min(a, b); i++){
             if(a % i == 0 && b % i == 0){
                 hcf = i;
             }
