@@ -6,7 +6,7 @@ public class armstrong {
         int n = sc.nextInt();
         int original = n;
         int sum = 0;
-        int digits = String.valueOf(n).length();
+        int digits = Integer.toString(n).length();
         while(n > 0){
             int digit = n % 10;
             sum += Math.pow(digit, digits);
