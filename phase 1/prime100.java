@@ -1,7 +1,7 @@
 public class prime100 {
     public static void main(String arg[]){
         System.out.println("Prime numbers 1 to 100:");
-        for(int i = 2; i <= 100; i++){
+        for(int i = 2; i <= 1000; i++){
             boolean isPrime = true;
             for(int j = 2; j < i; j++){
                 if(i % j == 0){
