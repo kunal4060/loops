@@ -6,7 +6,7 @@ public class reverse {
         int n = sc.nextInt();
         int reversed = 0;
         while(n > 0){
-            reversed = reversed * 10 + (n % 10);
+            reversed = reversed * 10 + (n % 10);//same as palindrome
             n /= 10;
         }
         System.out.println("Reversed number: " + reversed);
