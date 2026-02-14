@@ -1,16 +1,32 @@
 import java.util.Scanner;
-public class SumOfDigits {
-    public static void main(String arg[]){
+class SumOfDigits{
+    public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter number: ");
-        int n = sc.nextInt();
-        int sum = 0;
-        int temp = Math.abs(n); // Handle negative numbers
-        do {
-            sum += temp % 10;
-            temp /= 10;
-        } while(temp > 0);
-        System.out.println("Sum of digits: " + sum);
-        sc.close();
+
+        while(true){
+
+            int n = sc.nextInt();
+            int sum = 0;
+            do{
+                int a = n % 10 ;
+                sum = sum + a ;
+                n = n / 10 ;
+
+
+
+
+            }while(n>0);
+            System.out.println(sum);
+            System.out.println("exit == s");
+            String s = sc.nextLine();
+            if ( s == "s"){
+
+                break ;
+
+            }
+        }
+
+
     }
+
 }
